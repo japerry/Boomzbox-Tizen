@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=360, user-scalable=no"/>
+		<meta name="description" content="Hybrid Web Application Sample"/>
+
+		<title>Hybrid web app</title>
+		<script src="tizen-web-ui-fw/latest/js/jquery.min.js"></script>
+		<script src="./js/config.js"></script>
+		<script src="tizen-web-ui-fw/latest/js/tizen-web-ui-fw-libs.min.js"></script>
+		<script src="tizen-web-ui-fw/latest/js/tizen-web-ui-fw.min.js" data-framework-theme="tizen-white" data-framework-viewport-scale="false"></script>
+		<script type="text/javascript" src="./js/main.js"></script>
+		<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+	</head>
+
+	<body>
+		<div data-role="page" id="main">
+			<div data-role="header" data-position="fixed">
+				<h1>Hybrid web app</h1>
+			</div>
+
+			<div data-role="content" id="history">
+				<ul id="logs" data-role="listview">
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="tabbar" data-style="toolbar">
+					<ul>
+						<li><a id="btn-start">START</a></li>
+						<li><a id="btn-stop">STOP</a></li>
+						<li><a id="btn-clear">CLEAR</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

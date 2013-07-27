@@ -1,0 +1,7 @@
+body {
+	width: 100%;
+}
+
+.ui-tabbar-margin-back {
+	margin-right:0 !important;
+}
