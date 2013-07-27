@@ -1,0 +1,17 @@
+body {
+	width: 100%;
+}
+
+.ui-tabbar-margin-back {
+	margin-right:0 !important;
+}
+
+.ui-content {
+	padding: 2em;
+}
+.ui-title, .ui-author {
+	width: 100%
+}
+.ui-btn-inner {
+	padding: 0.5em;
+}
