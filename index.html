@@ -2,14 +2,14 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=360, user-scalable=no"/>
+		<meta name="viewport" content="width=360, user-scalable=yes"/>
 		<meta name="description" content="Hybrid Web Application Sample"/>
 
-		<title>Hybrid web app</title>
+		<title>Zen Radio</title>
 		<script src="tizen-web-ui-fw/latest/js/jquery.min.js"></script>
 		<script src="./js/config.js"></script>
 		<script src="tizen-web-ui-fw/latest/js/tizen-web-ui-fw-libs.min.js"></script>
-		<script src="tizen-web-ui-fw/latest/js/tizen-web-ui-fw.min.js" data-framework-theme="tizen-white" data-framework-viewport-scale="false"></script>
+		<script src="tizen-web-ui-fw/latest/js/tizen-web-ui-fw.min.js" data-framework-theme="tizen-black" data-framework-viewport-scale="false"></script>
 		<script type="text/javascript" src="./js/main.js"></script>
 		<link rel="stylesheet" type="text/css" href="./css/style.css"/>
 	</head>
@@ -17,21 +17,29 @@
 	<body>
 		<div data-role="page" id="main">
 			<div data-role="header" data-position="fixed">
-				<h1>Hybrid web app</h1>
+				<h1>Zen Radio</h1>
 			</div>
 
 			<div data-role="content" id="history">
 				<ul id="logs" data-role="listview">
 				</ul>
+				<h2>Controls</h2>
+                <h3>Volume</h3>
+                <input data-popup='false' type="range" name="slider" value="5" min="0" max="11" data-icon="text" />
+                <h3>Now Playing</h3>
+                <div>
+                  <span data-role="station">95.7</span>
+                  <span data-role="band">FM</span>
+                </div>
+                <div data-role="author">Abney Park</div>
+                <div data-role="title">Airship Pirates</div>
+                <h3>Tune</h3>
+                <div data-role="button" data-inline="true" data-icon="arrow-l" data-style="circle">Previous</div>
+				<div data-role="button" data-inline="true" data-icon="arrow-r" data-iconpos="right" data-style="circle">Next</div>
+				<h3>Presets</h3>
+				
 			</div>
 			<div data-role="footer" data-position="fixed">
-				<div data-role="tabbar" data-style="toolbar">
-					<ul>
-						<li><a id="btn-start">START</a></li>
-						<li><a id="btn-stop">STOP</a></li>
-						<li><a id="btn-clear">CLEAR</a></li>
-					</ul>
-				</div>
 			</div>
 		</div>
 	</body>
